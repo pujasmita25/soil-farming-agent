@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./soil.jpg');
+    background-size: cover;
+    font-family: 'roboto', sans-serif;
+}
+.form{
+    width: 20px;
+    height: auto;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+}
+input,
+.submit-btn,#idd{
+    width: 80%;
+    height: 45px;
+    display: block;
+    /*margin: 10px auto;*/
+    border-radius: 5px;
+    background: beige;
+    border: black;
+    color: black;
+    padding: 5px;
+    transition: .5s;
+}
+.submit-btn,#idd{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+}
+h1{
+     color:  beige;
+}
+
+.message{
+    color: beige;
+}
+.aa{
+    color: beige;
+}
+#ab,#idd{
+    text-decoration: none;
+    color: rgb(55, 5, 5);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./loginstyle.css">
+    
+    <title>Admin Login</title>
+</head>
+<!-- name =anne,password =23456,key= 340 -->    
+
+    
+<body>
+    
+
+   <form class="login-form" name="myForm" onsubmit="return validateForm()">
+        <h1>WELCOME TO SOIL FARMING AGENT!!</h1><br><br>
+        <input type="text" placeholder="username" id="name" name="username" required><br><br>
+        <input type="password" placeholder="password" id="password" name="pass"  required><br><br>
+        <input type="number" placeholder="secret id"  id="id" name="idt" required><br>
+        <button type="submit" class="submit-btn" formaction="adminpage.html">LOG-IN</button><br><br>
+        <p class="message" align="center">Go Back to the Login Page? <a href="./login.html" class="aa">BACK</a></p><br><br>
+        
+   </form>
+   
+    <script>
+        function validateForm() {
+     var x = document.forms["myForm"]["username"].value;
+     var y = document.forms["myForm"]["pass"].value;
+     var z = document.forms["myForm"]["idt"].value;
+     if (x == " " || y == " " || z==" " || z!="340" || y!="23456" || x!="anne") {
+        alert("Please enter right details");
+                  return false;
+          }
+     }  
+   </script>
+   
+    
+</body>
+</html>

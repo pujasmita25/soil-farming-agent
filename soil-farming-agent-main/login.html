@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./loginstyle.css">
+    
+    <title>Login</title>
+</head>
+<body>
+    
+
+   <form class="login-form" name="myForm" onsubmit="return validateForm()">
+        <h1>WELCOME TO SOIL FARMING AGENT!!</h1><br><br>
+        <input type="text" placeholder="username" id="name" name="username" required><br><br>
+        <input type="password" placeholder="password" id="passowrd" name="pass" required><br><br>
+        <button type="submit" class="submit-btn" formaction="userpage.html">LOG-IN</button><br><br>
+        <p class="message" align="center">Not registered? <a href="./signup.html" class="aa">Create an account</a></p><br><br>
+        <p class="message" align="center"><a href="./admin.html" class="aa">I'm the admin</a></p>
+      </form>
+      <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["username"].value;
+          var y = document.forms["myForm"]["pass"].value;
+          if (x == "" || y == "") {
+             alert("Please enter right values");
+                       return false;
+               }
+          }
+      </script>
+</body>
+</html>

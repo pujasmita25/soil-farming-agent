@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Seller</title>
+    <link rel="stylesheet" href="soil.css">
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("user_input").value;
+            document.getElementById('display1').innerHTML = 
+                        document.getElementById("user1_input").value;
+             document.getElementById('display2').innerHTML = 
+                        document.getElementById("user2_input").value;
+            document.getElementById('display3').innerHTML = 
+                        document.getElementById("user3_input").value; 
+            document.getElementById('display4').innerHTML = 
+                        document.getElementById("user4_input").value;                                      
+        }
+      </script>
+</head>
+
+<body bgcolor="beige" color="brown">
+    <header class="header">
+        <img id="img-head" 
+        src="https://tse2.mm.bing.net/th?id=OIP.-TqpfPqLLYwEuUp4zkddGgHaFs&pid=Api&P=0">
+        <div class="home">
+            <a href="adminpage.html" class="aaa">Back&nbsp;&nbsp;</a>
+        </div>
+    </header>
+    <form>
+        <label ><b><U>ENTER THE DETAILS OF SELLER</U></b></label><br><br>
+        <h4 align="center">{Donot enter the names which already exist and please enter valid details only}
+        </h4><br><br>
+        <input type="text" name="message" placeholder="Name of seller" id="user_input"><br><br>
+        <input type="text" name="message" placeholder="Seeds sold" id="user1_input" ><br><br>
+        <input type="number" name="message" placeholder="Phone" id="user2_input"><br><br>
+        <input type="email" name="message" placeholder="Email" id="user3_input" ><br><br>
+        <input type="text" name="message" placeholder="Office-address" id="user4_input"><br><br>
+        
+    </form>
+    <div class="deco">
+        <input type="submit" onclick="showInput();" ><br><br>
+        <label><u><b>YOUR INPUT:</b></u> </label>
+        <p><b><u>Name:</u></b>&nbsp;&nbsp;<span id='display'></span></p><br>
+        <p><b><u>Seeds Sold:</u></b>&nbsp;&nbsp;<span id='display1'></span></p><br>
+        <p><b><u>Phone:</u></b>&nbsp;&nbsp;<span id='display2'></span></p><br>
+        <p><b><u>Email:</u></b>&nbsp;&nbsp;<span id='display3'></span></p><br>
+        <p><b><u>Office-address:</u></b>&nbsp;&nbsp;<span id='display4'></span></p></div>
+    <p class="footer">
+        Thanks for visiting<br>
+        SOIL FARMING AGENT<br>
+        CopyRight &copy; Amala Shrivastava<br>
+        2023
+    </p>
+</body>
+</html>
